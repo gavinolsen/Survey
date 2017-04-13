@@ -18,7 +18,7 @@ class NetworkController {
         case delete = "DELETE"
     }
     
-    static func performRequest(url: URL, httpMethod: HTTPMethod, urlParams: [String:String], body: Data? = nil, completion: ((Data?, Error?) -> Void)? = nil) {
+    static func performRequest(url: URL, httpMethod: HTTPMethod, urlParams: [String:String]? = nil, body: Data? = nil, completion: ((Data?, Error?) -> Void)? = nil) {
         
         let urlRequest = self.url(byAdding: urlParams, to: url)
         
