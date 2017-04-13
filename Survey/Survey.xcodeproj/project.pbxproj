@@ -11,6 +11,8 @@
 		3B9B2E621E9FDED400B1B8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B2E601E9FDED400B1B8DF /* Main.storyboard */; };
 		3B9B2E641E9FDED400B1B8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B2E631E9FDED400B1B8DF /* Assets.xcassets */; };
 		3B9B2E671E9FDED400B1B8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9B2E651E9FDED400B1B8DF /* LaunchScreen.storyboard */; };
+		3B9B2E711E9FE20000B1B8DF /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E701E9FE20000B1B8DF /* Survey.swift */; };
+		3B9B2E761E9FE6F700B1B8DF /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		3B9B2E631E9FDED400B1B8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B9B2E661E9FDED400B1B8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B9B2E681E9FDED400B1B8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9B2E701E9FE20000B1B8DF /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,10 @@
 		3B9B2E5B1E9FDED400B1B8DF /* Survey */ = {
 			isa = PBXGroup;
 			children = (
-				3B9B2E601E9FDED400B1B8DF /* Main.storyboard */,
+				3B9B2E721E9FE21F00B1B8DF /* View */,
+				3B9B2E6F1E9FE1F000B1B8DF /* Model */,
+				3B9B2E741E9FE6E200B1B8DF /* Network Controller */,
+				3B9B2E731E9FE6D500B1B8DF /* Model Controller */,
 				3B9B2E6E1E9FDEE100B1B8DF /* Resources */,
 			);
 			path = Survey;
@@ -67,6 +74,37 @@
 				3B9B2E681E9FDED400B1B8DF /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B9B2E6F1E9FE1F000B1B8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B2E701E9FE20000B1B8DF /* Survey.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3B9B2E721E9FE21F00B1B8DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B2E601E9FDED400B1B8DF /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3B9B2E731E9FE6D500B1B8DF /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		3B9B2E741E9FE6E200B1B8DF /* Network Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */,
+			);
+			name = "Network Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9B2E5D1E9FDED400B1B8DF /* AppDelegate.swift in Sources */,
+				3B9B2E711E9FE20000B1B8DF /* Survey.swift in Sources */,
+				3B9B2E761E9FE6F700B1B8DF /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
