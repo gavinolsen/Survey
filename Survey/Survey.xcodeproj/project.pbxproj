@@ -14,6 +14,8 @@
 		3B9B2E711E9FE20000B1B8DF /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E701E9FE20000B1B8DF /* Survey.swift */; };
 		3B9B2E761E9FE6F700B1B8DF /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */; };
 		3B9B2E781E9FE74F00B1B8DF /* SurveyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E771E9FE74F00B1B8DF /* SurveyController.swift */; };
+		3B9B2E7B1E9FFBA200B1B8DF /* ResponseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E7A1E9FFBA200B1B8DF /* ResponseTableViewController.swift */; };
+		3B9B2E7D1E9FFBB200B1B8DF /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B2E7C1E9FFBB200B1B8DF /* SurveyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3B9B2E701E9FE20000B1B8DF /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		3B9B2E771E9FE74F00B1B8DF /* SurveyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyController.swift; sourceTree = "<group>"; };
+		3B9B2E7A1E9FFBA200B1B8DF /* ResponseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTableViewController.swift; sourceTree = "<group>"; };
+		3B9B2E7C1E9FFBB200B1B8DF /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		3B9B2E5B1E9FDED400B1B8DF /* Survey */ = {
 			isa = PBXGroup;
 			children = (
+				3B9B2E791E9FFB8700B1B8DF /* View Controller */,
 				3B9B2E721E9FE21F00B1B8DF /* View */,
 				3B9B2E6F1E9FE1F000B1B8DF /* Model */,
 				3B9B2E741E9FE6E200B1B8DF /* Network Controller */,
@@ -108,6 +113,15 @@
 				3B9B2E751E9FE6F700B1B8DF /* NetworkController.swift */,
 			);
 			name = "Network Controller";
+			sourceTree = "<group>";
+		};
+		3B9B2E791E9FFB8700B1B8DF /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B9B2E7A1E9FFBA200B1B8DF /* ResponseTableViewController.swift */,
+				3B9B2E7C1E9FFBB200B1B8DF /* SurveyViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9B2E7B1E9FFBA200B1B8DF /* ResponseTableViewController.swift in Sources */,
 				3B9B2E5D1E9FDED400B1B8DF /* AppDelegate.swift in Sources */,
 				3B9B2E711E9FE20000B1B8DF /* Survey.swift in Sources */,
 				3B9B2E761E9FE6F700B1B8DF /* NetworkController.swift in Sources */,
+				3B9B2E7D1E9FFBB200B1B8DF /* SurveyViewController.swift in Sources */,
 				3B9B2E781E9FE74F00B1B8DF /* SurveyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

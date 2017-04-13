@@ -39,7 +39,23 @@ class SurveyController {
     
     //post
     
-    
-    
-    
+    static func putSurvey(name: String, language: String) {
+        
+        let survey = Survey(name: name, lang: language)
+        
+        guard let url = baseURL?.appendingPathComponent(survey.id.uuidString).appendingPathExtension("json") else { return }
+        
+        NetworkController.performRequest(url: url, httpMethod: .put, body: survey.jsonRep) { (data, error) in
+            guard let data = data else { fatalError("bad data") }
+            let responseString = String(data: data, encoding: .utf8) ?? ""
+            
+            if error != nil {
+                print("error: \(String(describing: error?.localizedDescription))")
+            } else if responseString.contains("error") {
+                print("response string contains error: \(responseString)")
+            } else {
+                print("success: \(responseString)")
+            }
+        }
+    }
 }
